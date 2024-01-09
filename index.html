@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Aperture</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss"></style>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+  </head>
+
+  <body style="font-family: 'Poppins', 'sans-serif'" class="bg-neutral-200 dark:bg-black font-poppins">
+    <nav class="dark:bg-zinc-900 dark:border-black">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <span class="dark:text-white flex items-center space-x-3 text-4xl h-8">aperture</span>
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <button
+            type="button"
+            class="text-white dark:text-black bg-black dark:bg-white font-medium rounded-lg text-sm px-4 py-2 text-center">
+            Get template
+          </button>
+          <button
+            data-collapse-toggle="navbar-cta"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-zinc-700 dark:focus:ring-zinc-600"
+            aria-controls="navbar-cta"
+            aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+        </div>
+        <div class="items-center justify-between w-full hidden md:flex md:w-auto md:order-1" id="navbar-cta">
+          <ul
+            class="flex flex-col font-light p-4 md:p-0 mt-4 border border-black rounded dark:text-white dark:bg-zinc-800 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:md:bg-zinc-900">
+            <li>
+              <a href="#whatWeDo" class="block py-2 px-3 md:p-0 rounded md:bg-transparent">Buisness areas</a>
+            </li>
+            <li>
+              <a href="#splitter-1" class="block py-2 px-3 md:p-0 rounded md:bg-transparent">Featured images</a>
+            </li>
+            <li>
+              <a href="#gearCage" class="block py-2 px-3 md:p-0 rounded md:bg-transparent">Gear cage</a>
+            </li>
+            <li>
+              <a href="#contacts" class="block py-2 px-3 md:p-0 rounded md:bg-transparent">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="flex items-end flex-col bg-no-repeat w-full bg-cover h-[90vh] justify-evenly lg:justify-end"
+      id="header"
+      style="background-image: url(./img/main-bg.jpg)">
+      <div class="flex flex-col items-center w-full py-11">
+        <p class="uppercase tracking-widest text-gray-400 text-base">Photographer & filmmaker</p>
+        <h1 class="text-white text-4xl lg:text-7xl">Aperture Studios</h1>
+        <p class="text-gray-400 w-9/12 lg:w-5/12 text-sm lg:text-base text-center my-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
+          cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et
+          justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+        </p>
+      </div>
+      <div class="flex items-end text-sm text-white space-x-6 mb-5 mx-5">
+        <span class="flex"><img class="mx-1" src="./img/clock.svg" alt="" />1/2000s</span>
+        <span class="flex"><img class="mx-1" src="./img/aperure.svg" alt="" />f/11</span>
+        <span class="flex"><img class="mx-1" src="./img/iso.svg" alt="" />100</span>
+        <span class="flex"><img class="mx-1" src="./img/loaction.svg" alt="" />Iceland</span>
+      </div>
+    </div>
+
+    <section id="whatWeDo">
+      <div class="flex flex-col items-center my-14">
+        <h2 class="dark:text-white text-5xl tracking-wide font-light mb-2">What we do</h2>
+        <h3 class="dark:text-stone-400 font-light tracking-wide text-2xl mb-10">The areas we`re specialized in.</h3>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-4 gap-2 w-10/12">
+          <div
+            class="max-w-full p-6 mx-auto bg-cover bg-center bg-no-repeat h-[600px] flex flex-col justify-end shadow"
+            style="background-image: url(./img/IMAGE-1.jpg)">
+            <h5 class="card mb-2 text-2xl tracking-widest text-white uppercase">Product photography</h5>
+            <p class="font-normal w-11/12 text-gray-400">
+              Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius,
+              faucibus libero ac, cursus quam.
+            </p>
+            <button
+              type="button"
+              href="#"
+              class="bg-white rounded-xl text-black w-fit h-10 mt-5 text-xl flex items-center pr-4 py-2">
+              <img class="mx-3 h-5 align-middle" alt="" src="./img/circle.svg" />Read more
+            </button>
+          </div>
+          <div
+            class="max-w-full p-6 mx-auto bg-cover bg-center bg-no-repeat h-[600px] flex flex-col justify-end shadow"
+            style="background-image: url(./img/IMAGE-2.jpg)">
+            <h5 class="card mb-2 text-2xl tracking-widest text-white uppercase">Architecture Photography</h5>
+            <p class="font-normal w-11/12 text-gray-400">
+              Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius,
+              faucibus libero ac, cursus quam.
+            </p>
+            <button
+              type="button"
+              href="#"
+              class="bg-white rounded-xl text-black w-fit pr-4 py-2 h-10 mt-5 text-xl flex items-center">
+              <img class="mx-3 h-5 align-middle" alt="" src="./img/circle.svg" />Read more
+            </button>
+          </div>
+          <div
+            class="max-w-full p-6 mx-auto bg-cover bg-center bg-no-repeat h-[600px] flex flex-col justify-end shadow"
+            style="background-image: url(./img/IMAGE-3.jpg)">
+            <h5 class="card mb-2 text-2xl tracking-widest text-white uppercase">Drone Photography</h5>
+            <p class="font-normal w-11/12 text-gray-400">
+              Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius,
+              faucibus libero ac, cursus quam.
+            </p>
+            <button
+              type="button"
+              href="#"
+              class="bg-white rounded-xl text-black w-fit pr-4 py-2 h-10 mt-5 text-xl flex items-center">
+              <img class="mx-3 h-5 align-middle" alt="" src="./img/circle.svg" />Read more
+            </button>
+          </div>
+          <div
+            class="max-w-full p-6 mx-auto bg-cover bg-center bg-no-repeat h-[600px] flex flex-col justify-end shadow"
+            style="background-image: url(./img/IMAGE-4.jpg)">
+            <h5 class="card mb-2 text-2xl tracking-widest text-white uppercase">Wildlife Photography</h5>
+            <p class="font-normal w-11/12 text-gray-400">
+              Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius,
+              faucibus libero ac, cursus quam.
+            </p>
+            <button
+              type="button"
+              href="#"
+              class="bg-white rounded-xl text-black w-fit pr-4 py-2 h-10 mt-5 text-xl flex items-center">
+              <img class="mx-3 h-5 align-middle" alt="" src="./img/circle.svg" />Read more
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="splitter-1">
+      <div
+        class="flex items-end flex-col justify-between pb-5 bg-cover bg-center bg-no-repeat h-[600px]"
+        style="background-image: url(./img/bg-2.jpg)">
+        <div class="flex flex-col items-start w-2/3 lg:w-1/3 pt-32 lg:pt-52">
+          <h3 class="uppercase text-xl text-white tracking-widest">Sunset at mount Fuji</h3>
+          <p class="text-gray-400 text-base lg:w-7/12">
+            Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non.
+          </p>
+        </div>
+        <div class="flex items-end text-sm text-white space-x-6 mx-5">
+          <span class="flex"><img class="mx-1" src="./img/clock.svg" alt="" />1s</span>
+          <span class="flex"><img class="mx-1" src="./img/aperure.svg" alt="" />f/16</span>
+          <span class="flex"><img class="mx-1" src="./img/iso.svg" alt="" />400</span>
+          <span class="flex"><img class="mx-1" src="./img/loaction.svg" alt="" />Japan</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="gearCage">
+      <div class="bg-black grid grid-cols-1 md:grid-cols-2 gap-0 w-full md:h-[540px]">
+        <div class="flex flex-col p-16 lg:px-14 lg:py-32 lg:w-10/12 text-white">
+          <h2 class="text-stone-300 text-lg uppercase leading-tight tracking-widest">The Gear cage</h2>
+          <h1 class="text-2xl lg:text-4xl py-5 font-light leading-loose">The tools that we use.</h1>
+          <p class="text-white font-light leading-tight tracking-wider">
+            The say that "no place is boring if you've had a good night's sleep and have a pocket full of unexposed film". While
+            we don't shoot (a lot) of film these days — these are the tools that we actually use everyday to capture the amazing
+            things around us.
+          </p>
+          <button
+            type="button"
+            href="#"
+            class="bg-white tracking-wide rounded-xl text-black w-fit mt-10 py-3 pr-2 text-xl flex items-center">
+            <img class="mx-3 h-6 align-middle" alt="" src="./img/circle.svg" />Check it out
+          </button>
+        </div>
+        <div
+          class="flex justify-end items-end text-white text-sm space-x-6 bg-cover bg-center bg-no-repeat h-[500px] lg:h-full"
+          style="background-image: url(./img/cage.jpg)">
+          <div class="flex items-end text-sm text-white space-x-6 mb-5 mx-5">
+            <span class="flex"><img class="mx-1" src="./img/clock.svg" alt="" />0,8s</span>
+            <span class="flex"><img class="mx-1" src="./img/aperure.svg" alt="" />f/5,6</span>
+            <span class="flex"><img class="mx-1" src="./img/iso.svg" alt="" />100</span>
+            <span class="flex"><img class="mx-1" src="./img/loaction.svg" alt="" />Sweden</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="splitter-2">
+      <div
+        class="flex items-end flex-col justify-between pb-5 bg-cover bg-center bg-no-repeat h-[600px]"
+        style="background-image: url(./img/bg-3.jpg)">
+        <div class="flex flex-col items-start w-2/3 lg:w-1/3 pt-32 lg:pt-52">
+          <h3 class="uppercase text-xl text-white tracking-widest">SMonstera Leafs</h3>
+          <p class="text-gray-400 text-base lg:w-7/12">
+            Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.
+          </p>
+        </div>
+        <div class="flex items-end text-sm text-white space-x-6 mx-5">
+          <span class="flex"><img class="mx-1" src="./img/clock.svg" alt="" />1/400s</span>
+          <span class="flex"><img class="mx-1" src="./img/aperure.svg" alt="" />f/3.5</span>
+          <span class="flex"><img class="mx-1" src="./img/iso.svg" alt="" />100</span>
+          <span class="flex"><img class="mx-1" src="./img/loaction.svg" alt="" />Costa Rica</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="clients">
+      <div class="bg-black flex flex-col items-center py-24 h-auto">
+        <h1 class="text-white text-3xl lg:text-5xl tracking-wide font-light mb-2">Past clients</h1>
+        <h3 class="text-stone-400 font-light lg:tracking-wide text-lg lg:text-2xl mb-10">Trusted by your favourite companies</h3>
+        <div class="flex flex-col max-lg:space-y-12 lg:flex-row lg:space-x-36">
+          <img src="./img/1.svg" alt="" />
+          <img src="./img/2.svg" alt="" />
+          <img src="./img/3.svg" alt="" />
+          <img src="./img/4.svg" alt="" />
+          <img src="./img/5.svg" alt="" />
+        </div>
+      </div>
+    </section>
+    <section id="splitter-3">
+      <div
+        class="flex items-end flex-col justify-between pb-5 bg-cover bg-center bg-no-repeat h-[600px]"
+        style="background-image: url(./img/bg-4.jpg)">
+        <div class="flex flex-col items-start w-2/3 lg:w-1/3 pt-32 lg:pt-52">
+          <h3 class="uppercase text-xl text-white tracking-widest">Star fall in the Himalayas</h3>
+          <p class="text-gray-400 text-base lg:w-7/12">
+            Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula.
+          </p>
+        </div>
+        <div class="flex items-end text-sm text-white space-x-6 mx-5">
+          <span class="flex"><img class="mx-1" src="./img/clock.svg" alt="" />1/400s</span>
+          <span class="flex"><img class="mx-1" src="./img/aperure.svg" alt="" />f/3.5</span>
+          <span class="flex"><img class="mx-1" src="./img/iso.svg" alt="" />100</span>
+          <span class="flex"><img class="mx-1" src="./img/loaction.svg" alt="" />Costa Rica</span>
+        </div>
+      </div>
+    </section>
+    <section id="contacts">
+      <div class="flex bg-black flex-col items-center py-24 h-auto">
+        <h1 class="text-white text-3xl lg:text-5xl tracking-wide text-center font-light mb-4">
+          Need help with photography<br />
+          or videography?
+        </h1>
+        <h3 class="text-stone-400 font-light lg:tracking-wide text-lg lg:text-2xl mb-2 lg:mb-4">We're here for you!</h3>
+        <button
+          type="button"
+          href="#"
+          class="bg-white tracking-wide rounded-xl text-black w-fit mt-10 py-3 pr-2 text-sm lg:text-xl flex items-center">
+          <img class="mx-3 h-6 align-middle" alt="" src="./img/circle.svg" />Get in touch
+        </button>
+      </div>
+    </section>
+
+    <footer class="bg-black">
+      <div class="upper-footer flex flex-col lg:flex-row justify-around mx-auto w-3/4 pt-16">
+        <div class="flex flex-col">
+          <span class="text-white flex items-center space-x-3 text-4xl h-8 my-3">aperture</span>
+          <p class="text-stone-400 text-sm my-3">Photographers & videographers capturing the world around us.</p>
+        </div>
+
+        <div class="flex flex-row justify-between text-sm text-white font-light tracking-wider max-lg:my-10">
+          <div class="flex flex-col lg:mx-10">
+            <ul>
+              <li class="text-stone-400 mb-6 uppercase">Buisness areas</li>
+              <li class="mb-4">Product Photography</li>
+              <li class="mb-4">Architecture Photography</li>
+              <li class="mb-4">Drone Photography</li>
+              <li class="mb-4">Wildlife Photography</li>
+            </ul>
+          </div>
+          <div class="flex flex-col">
+            <ul>
+              <li class="text-stone-400 mb-6 uppercase">Pages</li>
+              <li class="mb-4">Gear cage</li>
+              <li class="mb-4">Featured images</li>
+              <li class="mb-4">Contact</li>
+              <li class="mb-4">Style guide</li>
+              <li class="mb-4">Instructions</li>
+              <li class="mb-4">Changelog</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="border border-white w-9/12 mx-auto my-16" />
+      <div class="flex flex-col lg:flex-row justify-between w-3/4 mx-auto">
+        <div class="flex flex-col">
+          <h2 class="uppercase text-white tracking-widest my-2">Subscribe to our newsletter</h2>
+          <p class="text-stone-400 text-sm tracking-wider my-2">Read about all the things we do.</p>
+        </div>
+        <div>
+          <form class="flex flex-row bg-white text-black text-sm rounded-lg w-full px-6 py-2.5">
+            <input type="email" required placeholder="youremail@mail.com" />
+            <button type="submit" class="grow text-white bg-black px-4 py-2 rounded-lg">Send</button>
+          </form>
+        </div>
+      </div>
+      <hr class="border border-white w-9/12 mx-auto my-16" />
+      <div class="flex flex-col lg:flex-row justify-between w-3/4 mx-auto">
+        <p class="text-stone-400 text-sm tracking-wider my-2">© Aperture Photography, Inc. All rights reserved.</p>
+        <div class="flex flex-row text-stone-400 space-x-6 mb-10">
+          <a clas href="#"><img src="./img/twitter.svg" alt="twitter" /></a>
+          <a clas href="#"><img src="./img/insta.svg" alt="insta" /></a>
+          <a clas href="#"><img src="./img/fb.svg" alt="fb" /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+  </body>
+</html>
